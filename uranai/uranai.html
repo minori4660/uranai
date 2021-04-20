@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>占おう(^^)</title>
+        <meta name="description" content="占いのサイト">
+
+    
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress,mincss">
+        <link href="https://fonts.gppgleapis.com/css?family=Philosopher"rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- ふぁびこん☆ -->
+        <link rel="icon" type="image/png" href="u">
+
+    </head>
+    
+    <body><!-- ナビ -->
+        <script language="JavaScript">
+            function omikuji()
+            {jikoku=new Date();
+            var byou=jikoku.getSeconds();
+            byou%=10;
+            var bun=new Array();
+            bun[0]="大吉！<br>今月はあなたにとって最高な月！一生懸命頑張ろう<p>ラッキーカラーは白</p><p>ラッキーアイテムは仏像</p>";
+            bun[1]="中吉！<br>今月はそこそこハッピー！努力は結果を結ぶ<p>ラッキーカラーは黒</p><p>ラッキーアイテムは星</p>";
+            bun[2]="吉。<br>今月は穏やかな日々が過ごせそうです。<p>ラッキーカラーはピンク</p><p>ラッキーアイテムはミッキー</p>";
+            bun[3]="小吉。<br>今月ははゆっくりと過ごしましょう。<p>ラッキーカラーは金色</p><p>ラッキーアイテムはイヤホン</p>";
+            bun[4]="凶…<br>今月は忘れ物に注意！<p>ラッキーカラーは黄緑</p><p>ラッキーアイテムはiPhone</p>";
+            bun[5]="大凶…<br>今月はミスを連発しそうです。<p>ラッキーカラーはオレンジ</p><p>ラッキーアイテムはマスク</p>";
+            bun[6]="中吉。<br>今月は懐かしい人に出会えそう。<p>ラッキーカラーはシルバー</p><p>ラッキーアイテムはピアス</p>";
+            bun[7]="小吉。<br今月は残り物には福がある。<p>ラッキーカラー青</p><p>ラッキーアイテムはトマト</p>";
+            bun[8]="凶…<br>今月はこんな日は大人しくしていよう。<p>ラッキーカラーは紺</p><p>ラッキーアイテムはリップ</p>";
+            bun[9]="吉。<br>今月は懐かしい人に連絡を取ってみよう。<p>ラッキーカラーは黄色</p><p>ラッキーアイテムはお財布</p>";
+            
+            
+            document.open();
+            document.bgColor ="#ffb6c1";
+            document.write('<html><body><center><font size="5">'+bun[byou]);
+            document.write('<br><br>');
+            document.write('<a href="uranai.html">戻る</a></font></center>');
+            document.write('</body></html>');
+            document.close();
+            }
+
+            </script>
+            
+
+         <div id="top" class="big-bg">
+            <header class="page-header wrapper">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="information.html">Information</a></li>
+                    </ul>
+                </nav>
+            
+            </header>
+            
+            <div class="home-content2 wrapper">
+                <h4 class="page-title2"></h4>
+                    <p>あなたの情報をおしえてね</p>
+                    <p>名前</p>
+                    <input type="name" name="name">
+                    <p>誕生日</p>
+                    <input type="date" name="calendar" max="9999-12-31">
+                    <p>性別</p>
+                    <input type="radio" name="gender" value="male">男性
+                    <input type="radio" name="gender" value="female">女性
+                　　 <p><input type="button" value="占う"  class="btn-circle-fishy" onClick="omikuji();"/></p>
+                 </div>
+         </div>
+        
+    </body>
+
+    
+    
+</html>
+        
